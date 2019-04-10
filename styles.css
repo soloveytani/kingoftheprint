@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    color: #3a3a3a;
+}
+
+.typ-header {
+    height: 195px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.typ-header-dark {
+    background-color: #bc3b61;
+}
+
+.typ-section-title {
+    padding: 40px 0 20px;
+}
+
+.typ-section-title h2 {
+    border-bottom: 1px solid #575d6b; 
+}
+
+.typ-logo {
+    background: url(aseets/logo.png) no-repeat;
+    background-size: contain;
+    height: 175px;
+    width: 280px;
+    display: inline-block;
+}
+
+.typ-menu {
+    width: calc(99% - 280px);
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.typ-menu p {
+    display: inline-block;
+    margin: 36px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #343434;
+    border-bottom: 2px solid #c23869;
+}
+
+.typ-header-dark p{
+    border-color: #14bfff;
+    color: #ffffff;
+}
+
+.typ-menu p:hover {
+    cursor: pointer;
+    color: #757575;
+    border-color: #232124;
+}
+
+.typ-header-dark p:hover {
+    color: #ffffff;
+    border-color: #232124;
+}
+
+.typ-main-image-section {
+    background: linear-gradient(to right,#999da6, #575d6b);
+    position: relative;
+}
+
+.typ-main-image {
+    background: url(aseets/mainImage.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.typ-tagline {
+    font-family: 'Noto Serif', serif;
+    font-size: 2em;
+    color: #fff214;
+    position: absolute;
+    width: 600px;
+    top: calc(50% - 20px);
+    left: calc(50% - 600px);
+}
+
+.typ-benefits-section {
+    padding: 10px 0;
+    padding: 20px 0 30px;
+}
+
+.typ-fix-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.typ-auto-width {
+    width: auto;
+    margin: 0 auto;
+}
+
+.typ-benefit-div {
+    width: 25%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: #626977;
+}
+
+.typ-benefit-div-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.typ-benefit-div img {
+    width: 60px;
+    height: 60px;
+}
+
+.typ-benefit-div h2 {
+    color: #31353e;
+}
+
+.typ-service-section {
+    background-color: #dbdde0;
+    padding: 20px 0 30px;
+}
+
+.typ-service-div {
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.typ-service-div img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.typ-service-div a {
+    display: block;
+    font-weight: bold;
+    color: #505050;
+    text-decoration: none;
+    margin: 20px 0 10px;
+}
+
+.typ-service-div a:hover {
+    color: #1e2025;
+}
+
+.typ-about-section {
+    padding: 20px 0 30px;
+}
+
+.typ-news-section {
+    padding: 20px 0 30px;
+    background-color: #bc3b61;
+    color: #ffffff;
+}
+
+.typ-news-section h2 {
+    border-bottom: 1px solid #fff214; 
+}
+
+.typ-contacts-section {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background-color: #454c5a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.scroll-top-button img {
+    width: 35px;
+    height: 34px;
+    transform: rotate(-90deg);
+}
+
+.scroll-top-button:hover {
+    background-color: #bc3b61;
+    cursor: pointer;
+}
