@@ -185,8 +185,8 @@ body {
 
 .scroll-top-button {
     position: fixed;
-    bottom: 100px;
-    right: 100px;
+    bottom: 30px;
+    right: 30px;
     background-color: #454c5a;
     border-radius: 50%;
     width: 60px;
@@ -205,4 +205,217 @@ body {
 .scroll-top-button:hover {
     background-color: #bc3b61;
     cursor: pointer;
+}
+
+/*------------------page----------------------*/
+
+.typ-filtration-conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.typ-select label {
+    margin: 0 0 6px 10px;
+    font-size: 13px;
+    color: #505050;
+}
+
+.typ-filtration-conatiner .custom-select {
+    margin-right: 20px;
+}
+
+/*-----------------login-page------------------*/
+
+.typ-login-root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #454c5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.typ-login-form {
+    box-sizing: border-box;
+    width: 420px;
+    max-width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+    border: #0b2969 1px solid;
+    border-radius: 8px;
+    box-shadow: 4px 0 4px #454c5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.typ-login-input {
+    width: calc(100% - 50px);
+}
+
+.typ-invalid-input {
+    border-color: #bc3b61 !important;
+}
+
+/*----------------------chat-------------------------*/
+
+.chat-button {
+    background: url('https://png.icons8.com/color/1600/chat');
+    background-size: cover;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: none;
+}
+
+.chat-button:hover {
+    cursor: pointer;
+}
+
+.chat {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    box-sizing: border-box;
+    width: 320px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 20px;
+}
+
+.chat-icon-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.chat-icon-button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.chat-close-button {
+    position: absolute;
+    right: -28px;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #1e2025;
+    background: url('http://simpleicon.com/wp-content/uploads/cross.png') no-repeat top left;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 70px;
+    background: linear-gradient(#2f324a, #424867);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 20px;
+}
+
+.chat-big-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.chat-name {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.chat-phone-button {
+    width: 34px;
+    height: 34px;
+    border: #1e2025;
+    background: url('https://www.trzcacak.rs/file/max/52/520900_phone-icon-png-transparent.jpg') no-repeat top left;
+    background-size: cover;
+    margin-left: auto;
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 14px;
+    max-height: 320px;
+    height: 320px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.chat-incoming-message {
+    display: flex;
+    margin-top: 16px;
+}
+
+.chat-outcoming-message {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 16px;
+}
+
+.chat-small-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.chat-outcoming-message .chat-small-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.chat-message {
+    flex: 1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.chat-incoming-message .chat-message {
+    background-color: #f1f0f0;
+}
+
+.chat-outcoming-message .chat-message {
+    background-color: #4db6ac;
+    color: #fff;
+}
+
+.chat-footer {
+    border-top: 1px solid #d8dee3;
+    background-color: #fff;
+    padding: 20px 14px;
+    display: flex;
+}
+
+.chat-send-button {
+    width: 34px;
+    height: 34px;
+    background: url('https://cdn4.iconfinder.com/data/icons/flat-circle-content/800/circle-content-send-512.png');
+    background-size: cover;
+    margin-left: auto;
+}
+
+.chat-input {
+    flex: 1;
+    border: none;
+    outline: none;
 }

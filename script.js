@@ -137,3 +137,51 @@ window.onscroll = function() {
 }
 
 console.log(benefitsContainer);
+
+function logout () {
+    window.localStorage.removeItem('login');
+    checkIsAuth();
+};
+
+function checkIsAuth () {
+    if (!window.localStorage.login) window.open('./login.html', '_self');
+};
+
+function openChat() {
+    var chat = document.getElementById('chat');
+    chat.style.display = 'block';
+    var chatButton = document.getElementById('chat-button');
+    chatButton.style.display = 'none';
+};
+
+function closeChat() {
+    var chatButton = document.getElementById('chat-button');
+    chatButton.style.display = 'block';
+    var chat = document.getElementById('chat');
+    chat.style.display = 'none';
+};
+
+function sendMessage() {
+    var message = document.getElementById('chat-input');
+    
+    if (message.value) {
+        var outcome = document.createElement('div');
+        outcome.className = 'chat-outcoming-message';
+    
+        var image = document.createElement('img');
+        image.src = 'https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1';
+        image.className = 'chat-small-icon';
+    
+        var text = document.createElement('div');
+        text.className = 'chat-message';
+        text.innerHTML = message.value;
+        message.value = '';
+    
+        outcome.appendChild(image);
+        outcome.appendChild(text);
+    
+        var chat = document.getElementById('chat-content');
+        chat.appendChild(outcome);
+    }
+}
+

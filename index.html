@@ -16,6 +16,7 @@
           <p onclick="scrollToSection('typ-about-section')">О нас</p>
           <p onclick="scrollToSection('typ-news-section')">Новости</p>
           <p onclick="scrollToSection('typ-contacts-section')">Контакты</p>
+          <p onclick="logout()">Выйти</p>
         </div>
       </div>
     </header>
@@ -70,6 +71,25 @@
           <p>KingOfThePrint@gmail.com</p>
           <p>+7 (911) 111-55-11</p>
       </section>
+      <div class="chat" id="chat">
+        <button class="chat-icon-button chat-close-button" onclick="closeChat()"></button>
+        <div class="chat-header">
+          <img class="chat-big-icon" src="http://steezo.com/wp-content/uploads/2012/12/man-in-suit2.jpg" />
+          <p class="chat-name">Владимир</p>
+          <button class="chat-icon-button chat-phone-button"></button>
+        </div>
+        <div class="chat-content" id="chat-content">
+          <div class="chat-incoming-message">
+            <img class="chat-small-icon" src="http://steezo.com/wp-content/uploads/2012/12/man-in-suit2.jpg" />
+            <div class="chat-message">Здравствуйте, чем могу помочь?</div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Введите сообщение" class="chat-input" id="chat-input"/>
+          <button class="chat-icon-button chat-send-button" onclick="sendMessage()"></button>
+        </div>
+      </div>
+      <button class="chat-button" id="chat-button" onclick="openChat()"></button>
       <div class="scroll-top-button" id="scroll-top-button" onclick="scrollToSection('typ-header')"><img src="https://proveg.com/es/wp-content/uploads/sites/2/2018/07/5b0be0ac3ae9e520d568d598_Icon-arrow-right-white.png"/></div>
     <script src="script.js"></script>
   </body>
